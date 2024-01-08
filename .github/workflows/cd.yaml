@@ -59,7 +59,7 @@ jobs:
   # 
   # This job will require the `deploy_staging` job to
   # run and complete successfully first!
-  # 
+   
   # WARNING: this job will sync all the files that are 
   # in the folder ./web/ to the production server 
   # while removing all the files that are already 
