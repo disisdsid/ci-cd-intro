@@ -13,9 +13,7 @@ defaults:
   run:
     shell: bash
     # Define the working directory for all run steps in the workflow
-    working-directory: ./web
-extends:
-  - .github/workflows/common.yaml    
+    working-directory: ./web    
 
 jobs:
 
