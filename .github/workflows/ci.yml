@@ -12,6 +12,8 @@ on:
       - main
     paths:
       - 'web/**'
+extends:
+  - .github/workflows/common.yaml
 
 jobs:
 
