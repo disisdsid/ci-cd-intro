@@ -1,0 +1,23 @@
+name: Common Workflow
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./your-project-directory
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  set-node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Node.js version
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
